@@ -1186,7 +1186,6 @@
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-analytics-compat.js"></script>
 
 <script>
 /* =====================================================================
@@ -1205,7 +1204,6 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
-try{ firebase.analytics(); }catch(e){ /* analytics pode falhar em file:// ou ad-blockers */ }
 
 const fbAuth = firebase.auth();
 const fbDb = firebase.firestore();
